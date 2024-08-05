@@ -5,7 +5,7 @@ import os
 
 
 script_directory = os.path.dirname(os.path.realpath(__file__))
-
+os.environ["GRPC_VERBOSITY"] = "NONE"
 
 def main():
     parser = argparse.ArgumentParser(
